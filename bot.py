@@ -2,6 +2,10 @@ import os
 from dotenv import load_dotenv
 import telebot
 
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+import random
+
 load_dotenv()  
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
